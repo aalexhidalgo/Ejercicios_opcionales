@@ -4,25 +4,16 @@ using UnityEngine;
 
 public class ColorManager : MonoBehaviour
 {
-    public Color RandomColor()
-    {
-        return new Color(Random.Range(0f, 1f), Random.Range (0f, 1f), Random.Range (0f, 1f));
-    }
+    public Color MyColor;
 
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<MeshRenderer>().material.color = RandomColor();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GetComponent<MeshRenderer>().material.color = MyColor;
     }
 
     private void OnMouseDown()
     {
-        Camera.main.GetComponent<Camera>().backgroundColor = RandomColor();
+        Camera.main.GetComponent<Camera>().backgroundColor = MyColor;
     }
 }

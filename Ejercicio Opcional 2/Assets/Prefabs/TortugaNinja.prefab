@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 6649218196672866775}
   - component: {fileID: 6649218196672866774}
   - component: {fileID: 6649218196672866773}
-  - component: {fileID: 6649218196672866772}
   m_Layer: 0
   m_Name: Labio superior
   m_TagString: Untagged
@@ -178,19 +177,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6649218196672866772
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649218196672866731}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6649218196727476688
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +283,6 @@ GameObject:
   - component: {fileID: 6649218197075457902}
   - component: {fileID: 6649218197075457901}
   - component: {fileID: 6649218197075457900}
-  - component: {fileID: 6649218197075457891}
   m_Layer: 0
   m_Name: Ojo izquierdo
   m_TagString: Untagged
@@ -370,19 +355,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6649218197075457891
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649218197075457890}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6649218197159037659
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,7 +366,6 @@ GameObject:
   - component: {fileID: 6649218197159037639}
   - component: {fileID: 6649218197159037638}
   - component: {fileID: 6649218197159037637}
-  - component: {fileID: 6649218197159037636}
   m_Layer: 0
   m_Name: Lengua
   m_TagString: Untagged
@@ -465,19 +436,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6649218197159037636
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649218197159037659}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6649218197175000816
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +542,6 @@ GameObject:
   - component: {fileID: 6649218197238052136}
   - component: {fileID: 6649218197238052143}
   - component: {fileID: 6649218197238052142}
-  - component: {fileID: 6649218197238052141}
   m_Layer: 0
   m_Name: Ojo derecho
   m_TagString: Untagged
@@ -657,19 +614,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6649218197238052141
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649218197238052140}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6649218197250210698
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,7 +758,6 @@ GameObject:
   - component: {fileID: 6649218197717275235}
   - component: {fileID: 6649218197717275234}
   - component: {fileID: 6649218197717275233}
-  - component: {fileID: 6649218197717275232}
   m_Layer: 0
   m_Name: Mandibula
   m_TagString: Untagged
@@ -885,19 +828,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6649218197717275232
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649218197717275238}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6649218197833792847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1182,8 +1112,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.7426236
+  m_Center: {x: 0.049749654, y: -0.19287343, z: 0.000000011561767}
 --- !u!114 &6649218198373528864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1196,6 +1126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1912265fa66ae74faa77dcc6e1623c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &6649218198477050169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,7 +1233,6 @@ GameObject:
   - component: {fileID: 6649218198682195334}
   - component: {fileID: 6649218198682195333}
   - component: {fileID: 6649218198682195332}
-  - component: {fileID: 6649218198682195355}
   m_Layer: 0
   m_Name: Boca (negro)
   m_TagString: Untagged
@@ -1375,19 +1305,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6649218198682195355
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649218198682195354}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6649218198684945576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,7 +1316,6 @@ GameObject:
   - component: {fileID: 6649218198684945621}
   - component: {fileID: 6649218198684945620}
   - component: {fileID: 6649218198684945579}
-  - component: {fileID: 6649218198684945578}
   m_Layer: 0
   m_Name: Cabeza
   m_TagString: Untagged
@@ -1470,16 +1386,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6649218198684945578
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6649218198684945576}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
