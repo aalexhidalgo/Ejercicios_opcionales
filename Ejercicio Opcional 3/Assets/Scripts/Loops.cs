@@ -7,10 +7,12 @@ public class Loops : MonoBehaviour
     //Variables
     public int Divisor = 3;
     public int[] intArray;
+    public GameObject EnemyPrefab;
+    public int NumEnemies = 1;
     // Start is called before the first frame update
     void Start()
     {
-        Ejercicio4();
+        Ejercicio5();
     }
 
     // Update is called once per frame
@@ -56,4 +58,16 @@ public class Loops : MonoBehaviour
         }
     }
 
+    public Vector3 RandomSpawnPos()
+    {
+        float Limit = 8f;
+        return new Vector3 (Random.Range(-Limit, Limit), Random.Range(-Limit, Limit), Random.Range(-Limit, Limit));
+    }
+    private void Ejercicio5()
+    {
+        for (int i = 1; i <= NumEnemies; i++)
+        {
+            Instantiate(EnemyPrefab, RandomSpawnPos(), EnemyPrefab.transform.rotation);
+        }
+    }
 }
