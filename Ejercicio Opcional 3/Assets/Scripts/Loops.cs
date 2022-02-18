@@ -30,7 +30,7 @@ public class Loops : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Ejercicio1_WHILE();
+        Ejercicio7();
     }
 
     // Update is called once per frame
@@ -51,7 +51,7 @@ public class Loops : MonoBehaviour
 
     private void Ejercicio2()
     {
-        for (int i = 0; i <= 19; i++)
+        for (int i = 0; i < 20; i++)
         {
             Debug.Log("Hola, holita, vecinito");
         }
@@ -102,6 +102,7 @@ public class Loops : MonoBehaviour
 
     private void Ejercicio7()
     {
+        Debug.Log("Chantaje es una palabra muy fea, yo prefiero extorsión, la X le da mucha clase... jejejejeje");
         foreach (Material Mat in MatArray)
         {
             Instantiate(CylinderPrefab, RandomSpawnPos(), CylinderPrefab.transform.rotation);
@@ -142,106 +143,130 @@ public class Loops : MonoBehaviour
 
     private void Ejercicio1_WHILE()
     {
-        int Counter = 0;
-        while (Counter <= 100)
+        int i = 0;
+
+        while (i <= 100)
         {
-            if (Counter % 2 == 0)
+            if (i % 2 == 0)
             {
-                Debug.Log($"{Counter}");
+                Debug.Log($"{i}");
             }
-            Counter++;
+
+            i++;
         }
     }
 
     private void Ejercicio2_WHILE()
     {
-        int Counter = 0;
-        while (Counter < 20)
+        int i = 0;
+
+        while (i < 20)
         {
-            Counter++;
+            i++;
             Debug.Log("Hola, holita, vecinito");
         }
     }
 
     private void Ejercicio3_WHILE()
     {
-        int Counter = 0;
-        while (Counter < 500)
+        int i = 0;
+        int Divisor = 3;
+
+        while (i < 500)
         {
-            if (Counter % 3 == 0)
+            if (i % Divisor == 0)
             {               
-                Debug.Log($"{Counter}");
+                Debug.Log($"{i}");
             }
-            Counter++;
+
+            i++;
         }
     }
 
     private void Ejercicio4_WHILE()
     {
-        int Counter = 0;
-        while (Counter < intArray.Length)
+        int i = 0;
+
+        while (i < intArray.Length)
         {
-            Debug.Log($"{intArray[Counter]}");
-            Counter++;
+            Debug.Log($"{intArray[i]}");
+            i++;
         }
     }
 
     private void Ejercicio5_WHILE()
     {
-        int Counter = 0;
+        int i = 0;
         Debug.Log("Love me or DIE... hehehe...");
-        while(Counter < NumEnemies)
+
+        while(i < NumEnemies)
         {
             Instantiate(SphereEnemyPrefab, RandomSpawnPos(), SphereEnemyPrefab.transform.rotation);
-            Counter++;
+            i++;
         }
     }
 
     private void Ejercicio6_WHILE()
     {
+        int i = 0;
         Debug.Log("Serás mi nuevo ingrediente para las Cangreburgers, ñam!");
-        for (int i = 1; i <= NumEnemies; i++)
+
+        while (i < NumEnemies)
         {
             Vector3 CubeEnemyPos = new Vector3(i, i, 0);
             Instantiate(CubeEnemyPrefab, CubeEnemyPos, CubeEnemyPrefab.transform.rotation);
+            i++;
         }
     }
 
     private void Ejercicio7_WHILE()
     {
-        foreach (Material Mat in MatArray)
+        int i = 0;
+        Debug.Log("Chantaje es una palabra muy fea, yo prefiero extorsión, la X le da mucha clase... jejejejeje");
+
+        while (i < MatArray.Length)
         {
             Instantiate(CylinderPrefab, RandomSpawnPos(), CylinderPrefab.transform.rotation);
-            CylinderPrefab.GetComponent<MeshRenderer>().material = Mat;
+            CylinderPrefab.GetComponent<MeshRenderer>().material = MatArray[i];
+            i++;
         }
     }
 
     private IEnumerator Ejercicio8_WHILE()
     {
+        int i = 0;
         GameObject CapsulePrefab = Instantiate(CapsuleEnemyPrefab, RandomSpawnPos(), CapsuleEnemyPrefab.transform.rotation);
         Debug.Log("Podré no ser un perro inteligente, pero sé qué es que atropellen a alguien.");
-        for (int i = 0; i < 10; i++)
+
+        while (i < 10)
         {
             CapsulePrefab.transform.localScale += GrowScale;
             yield return new WaitForSeconds(Timer);
+            i++;
         }
     }
 
     private IEnumerator Ejercicio9_WHILE()
     {
-        for (int i = 0; i < GoArray.Length; i++)
+        int i = 0;
+
+        while (i < GoArray.Length)
         {
             GoArray[i].SetActive(true);
             yield return new WaitForSeconds(SecondTimer);
+            i++;
         }
     }
 
     private IEnumerator Ejercicio10_WHILE()
     {
-        for (int i = 0; i < StrArray.Length; i++)
+        int i = 0;
+
+        while (i < StrArray.Length)
         {
             Debug.Log(StrArray[i]);
             yield return new WaitForSeconds(GrowingTimer * i);
+            i++;
         }
     }
 }
