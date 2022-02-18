@@ -30,7 +30,7 @@ public class Loops : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Ejercicio10());
+        StartCoroutine(Ejercicio8());
     }
 
     // Update is called once per frame
@@ -92,7 +92,7 @@ public class Loops : MonoBehaviour
 
     private void Ejercicio6()
     {
-        Debug.Log("Nuevo ingrediente para mis Cangreburgers, ñam!");
+        Debug.Log("Serás mi nuevo ingrediente para las Cangreburgers, ñam!");
         for (int i = 1; i <= NumEnemies; i++)
         {
             Vector3 CubeEnemyPos = new Vector3 (i, i, 0); 
